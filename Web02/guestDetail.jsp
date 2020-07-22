@@ -58,9 +58,9 @@
    
    <tr align="center">
     <td colspan="2">
-        <a href="#">[수정]</a>
+        <a href="guestEdit.jsp?idx=<%= Gsabun%>"> <%= Gtitle %>[수정]</a>
     	<a href="guestWrite.jsp">[등록]</a>
-    	<a href="#">[삭제]</a>
+    	<a href="guestDelete.jsp?idx=<%= Gsabun%>"> <%= Gtitle %>[삭제]</a>
  		<a href="index.jsp">[index]</a>
  		<a href="guestList.jsp">[전체출력]</a>
     </td>
@@ -70,7 +70,6 @@
  <p>
  <!-- 댓글문서포함 guestReply.jsp -->
 
- 
  <p><br>
 </body>
 </html>
