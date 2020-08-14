@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+	font-family: '티머니 둥근바람';
+}
+
+.all{
+}
+
+.center{
+    background-image: url('../images/main3.jpg');
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+    margin-left:50px;
+    margin-right:50px;
+    width:800px;
+	height:400px;
+    padding: 200px;
+    font-size: 40pt;
+    text-decoration:none;
+    color:white;
+    text-shadow: 5px 5px 10px black ;
+    box-sizing: border-box;
+    
+}

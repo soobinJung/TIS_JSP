@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.box{
+	text-align:center;
+	font-size:30pt;
+}
+
+.left{
+	text-align:center;
+	font-size:10pt;
+	width: 200px;
+	height: 600px;
+	float:left;
+	border-right:1px solid black;
+}
+
+.categori{
+	padding:1px;
+}
+
+.right1{
+	text-align:center;
+/* 	border:1px solid black; */
+	margin-left:210px;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.right2{
+	width:1000px;
+	margin:10px 250px;
+	padding-bottom:10px;
+	font-size:15pt;
+}
+
+.right3{
+	text-align:center;
+	margin-left:200px;
+}
+
+
+.content_name{
+	text-align:center;
+	font-size:20pt;
+    width:400px; height:50px;
+    border:1px solid black;
+    border-radius:15px;
+}
+
+.name{
+	width:200px; height: 50px;
+	float:left;
+}
+.content_birth{
+	text-align:center;
+	font-size:20pt;
+    width:400px; height:50px;
+    border:1px solid black;
+    border-radius:15px;
+}
+
+.birth{
+	width:200px; height: 50px;
+	float:left;
+}
+
+.content_email{
+	text-align:center;
+	font-size:20pt;
+    width:400px; height:50px;
+    border:1px solid black;
+    border-radius:15px;
+}
+
+.email{
+	width:200px; height: 50px;
+	float:left;
+}
+
+.content_phone{
+	text-align:center;
+	font-size:20pt;
+    width:400px; height:50px;
+    border:1px solid black;
+    border-radius:15px;
+}
+
+.phone{
+	width:200px; height: 50px;
+	float:left;
+}
+
+.button{
+	background-color: rgb(0, 206, 154);
+    color: white;
+    width:100px; height: 30px;
+    border:0px;
+    border-radius: 5px;
+    font-size: 15pt;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dong_signup</title>
+    <link rel="stylesheet" href="../css/signup.css">
+	<script src="../js/signup.js"></script>
+	<script src="../js/signupnull.js"></script>
+	<script src="../js/signupconfirm.js"></script>
+	<script src="../js/signupduplication.js"></script>
+</head>
+<body>
+<form name="signup">
+    <div class="all" align="center">
+    <div class="table" align="center"></div>
+    <table class="box" align="center" cellspacing="10px">
+        <tr align="center"><td colspan="3">
+            <font size="6pt">SignUp</font>
+        </td></tr>
+
+        <tr><td><br></td></tr>
+		
+		<tr align="center">
+            <td align="right">*Name</td>
+            <td><input type="text" size="30" class="input" id="name" name="name" value=""></td>
+        </tr>
+		
+        <tr align="center">
+            <td align="right">*ID</td>
+            <td align="center">
+                <input type="text" size="30" class="input_id" id="id" name="id">
+                <input type="button" class="button_check" value="Duplication" onclick="doublecheck();">
+            </td>
+        </tr>
+        
+        
+        
+        
+        <tr align="center">
+            <td align="right">*PW</td>
+            <td><input type="text" size="30" class="input" id="pw" name="pw" value="1234"></td>
+        </tr>
+        
+        
+        
+        
+        <tr align="center">
+            <td align="right">*PW confirmation</td>
+            <td>
+            	<input type="text" size="30" class="input" id="pw2" name="pw2" onKeyup="checkpw();"><br>
+            	<label id="pwcon"></label>
+            </td>
+            
+        </tr>
+        
+        
+        
+        
+        <tr align="center">
+            <td align="right">*Phone number</td>
+            <td><input type="text"  class="phone" id="phone1" name="phone1" maxlength="3">
+                <input type="text"  class="phone" id="phone2" name="phone2" maxlength="4">
+                <input type="text"  class="phone" id="phone2" name="phone2" maxlength="4">
+            </td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <td align="right">*Gender</td>
+            <td align="center" colspan="2">
+                <input type="button" class="button_gender" value="Female" id="gender" name="gender" onclick="gendercheck();">
+                <input type="button" class="button_gender" value="male" id="gender" name="gender" onclick="gendercheck();">
+            </td>
+        </tr>
+        
+        
+        
+        
+        <tr align="center">
+            <td align="right">*Email</td>
+            <td>
+            	<input type="text" size="30" class="input" id="email" name="email">
+            </td>
+        </tr>
+        
+        <tr align="center">
+            <td align="right">*Birth</td>
+            <td>
+	            <input type="text" 			size="30" 		class="input" 
+	                   id="birth" 			name="birth" 	maxlength="6"
+	                   value="ex)951119" 	onclick="clear();">
+            </td>
+                       
+        </tr>
+        
+        
+        
+        <tr align="center">
+            <td align="right">*Postal Code</td>
+            <td>
+            	<input type="text" size="30" class="input_code" value="">
+                <input type="button" class="button_code" value="Postal" onclick="execDaumPostcode();">
+            </td>
+        </tr>
+        
+        
+        
+        <tr align="center">
+            <td align="right">*Address</td>
+            <td>
+            	<input type="text" size="30" class="input" value="" name="juso1"  id="juso1">
+            </td>
+        </tr>
+        
+        
+        
+        <tr align="center">
+            <td align="right">*Detailed Address</td>
+            <td>
+            	<input type="text" size="30" class="input" value=""  name="juso2"  id="juso2">
+            </td>
+        </tr>
+        
+        
+        <tr align="center">
+            <td align="right">*Profile picture</td>
+            <td>
+            	<input type="file" id="file" name="file" onchange="handleFileSelect()">
+            </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td align="right" colspan="3">
+                Terms of service agreement<input type="checkbox" name="agree">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            
+        </tr>
+        
+        
+        
+        <tr>
+            <td colspan="3" align="center">
+                <textarea class="text" cols="80" rows="4">
+terms of service content
+                </textarea>
+        <tr align="center">
+            <td colspan="3">
+            
+            
+<!--                 <a href="index.jsp"> -->
+                	<input type="submit" class="button" value="Complete" onclick="save(); nullcheck();">
+<!--                 </a> -->
+                
+                
+                
+                <a href="index.jsp">
+                	<input type="submit" class="button" value="Cancel" onclick="confirm();">
+                </a>
+                
+                
+            </td>
+        </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.titlebox{
+	margin-top:50px;
+	text-align:center;
+	font-size:30pt;
+	height:100px;
+}
+
+
+.photobox{
+	padding:50px;
+	height:250px;
+}
+
+.photo{
+	border:0px;
+	border-radius: 35px;
+	width: 200px;
+	height: 200px;
+	text-align:center;
+}
+
+.title{
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:30pt;
+}
+
+.profile_picture{
+	background-image: url("../images/profile.jpg");
+	background-position-x: center;  
+    background-position-y: center; 
+    background-size:130%;
+    border:0px;
+	border-radius:100%;
+	width:50px; height:50px;
+}
+
+.intro_text{
+	font-size:15pt;
+	padding:20px;
+}
+
+.supplies_title{
+	background-color:DodgerBlue;
+	text-align:center;
+	border:0;
+	border-radius:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:30pt;
+}
+
+.supplies_content{
+	font-size:15pt;
+	padding:20px;
+}
+
+.schedule{
+	text-align:center;
+	padding:20px;
+}
+
+.schedule_table{
+	text-align:center;
+	width:800px;
+	padding:0px;
+	font-size:25px;
+	content
+	: 
+}
+
+
+.comment_title{
+	border:0;
+	border-radius:20px;
+	background-color:DodgerBlue;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:30pt;
+}
+
+.comment_picture{
+	background-image: url("../images/profile.jpg");
+	background-position-x: center;  
+    background-position-y: center; 
+    background-size:130%;
+    border:0px;
+	border-radius:100%;
+	width:30px; height:30px;
+}
+
+.comment_name{
+	padding:10px 20px;
+	font-size:20pt;
+}
+
+.comment_text{
+	padding-left:20px;
+	padding-bottom:20px;
+	font-size:15pt;
+}

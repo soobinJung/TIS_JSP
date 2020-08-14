@@ -1,0 +1,274 @@
+https://smlim.tistory.com/21
+
+:::외부:::
+<a href="#" onclick="alert('환영')">▶ 버튼에 스크립트 삽입
+<a href="javascript:alert('환영')">▶ 버튼에 스크립트 삽입
+<script language='javascript' src='fr.js'></script>▶ 외부에서 가져오기
+
+
+:::Window객체:::
+window.defaultStatus▶ 상태 표시줄에 표시할 문자열의 초기 값 설정
+window.frames▶ 창에 포함된 프레임을 배열 형태로 지정
+window.opener▶ 오픈메소드를 사용해서 새 상츨 열었을 경우, 새 창을 열도록 한 문서를 가리킴
+window.parent▶ 상위 프레임을 가리킴
+window.self▶ 현재 작업중인창
+window.top▶ 프레임이 설정되기 전에 상태로 돌아감
+window.classes▶ 문서 안에 정의된 모든 스타일시트의 정보를 갖음
+window.tags▶ 모든 태그의 정보를 나타냄
+window.screenX▶ 창의 x좌표 반환
+window.screenY▶ 창의 y좌표 반환
+window.close▶ 창이 닿여 있는지 확인 후 true, false 반환
+windwo.length▶ 창 안에 프레임 수 반환
+----------윈도우 메소드-----------
+window.alert("메시지")▶ 경고 창
+window.prompt("메시지", "기본문구")▶ 입력 창 띄움
+window.confirm("메시지")▶ 확인, 취소창 띄움
+window.status="환영합니다."▶ 상태표시줄 표시
+window.close()▶ 창닫기
+window.moveBy(x,y)▶ 브라우저를 상태좌표로 지정한 픽셀만큼 이동
+window.moveTo(x,y)▶ 브라우저를 절대좌표로 지정한 픽셀만큼 이동
+window.resizeBy(x,y)▶ 브라우저의 크기를 상대적으로 지정한 픽셀만큼 설정
+window.resizeTo(x,y)▶ 브라우저의 크기를 절대 값으로 지정한 픽셀만큼 설정
+window.scroll(x,y)▶ 창이나 프레임 안의 내용을 스크롤함
+window.scrollBy(x,y)▶ 스크롤을 상대좌표로 이동
+window.scrollTo(x,y)▶ 스크롤을 절대좌표로 이동
+window.setTimeout("명령문",시간간격)▶ 일정한 시간 간격으로 명령문을 반복 실행(1/1000초 단위)
+window.clearTimout()▶ SetTimeout()으로 동작되는 타이머 해제
+window.print()▶ 현재 문서 출력
+window.back()▶ 한단계 이전 URL로 이동
+window.forward()▶ 한단계 이후 URL로 이동
+window.home()▶ 브라우저에서 home으로 지정된 URL로 이동
+window.stop()▶ 불러오기 중지
+window.find("문자열")▶ 지정된 문자열이 있는지 검사(true, false 값)
+window.open("경로","창이름","속성")▶ 새 창을 연다.
+---------window.open()속성-----------
+directories=yes/no▶ 연결 등 디렉토리 메뉴 표시 여부
+menubar=yes/no▶ 메뉴 바 표시 여부
+toolbar=yes/no▶ 툴 바 표시 여부
+location=yes/no▶ 주소 입력줄 표시 여부
+resizeble=yes/no▶ 크기 재설정 버튼 표시 여부
+status=yes/no▶ 상태 표시줄 표시 여부
+scrollbars=yes/no▶ 스크롤 바 표시 여부
+copyhistory=yes/no▶ 히스토리 정보를 지정할지 여부
+channelmode▶ 전체화면 모드
+fullscreen▶ 전체화면으로 표시
+width=값▶ 창 넓이
+height=값▶ 창 높이
+left=값▶ 좌측 좌표 값
+top=값▶ 위쪽 좌표 값
+
+
+
+:::특수문자:::
+\n▶ 한줄 바꾸기
+\t▶ 탭 키(커서가 탭  키를 누른 만큼 이동)
+\b▶ 백 키(한 글자 좌측으로 이동하면서 좌측의 문자를 지움)
+\f▶ 폼피트(한 장 넘어가 출력)
+\r▶ 캐리지 리터(커서를 그 줄의 처음으로 이동)
+\\▶ 역슬래시 표시
+\'▶ 작은따옴표
+\"▶ 쌍따옴표
+
+
+
+:::이벤트핸들러:::
+onClick▶ 창, 버튼 클릭
+onDbclick▶ 더블클릭
+onMouseover▶ 그림위로 마우스가 올라갈때
+onMouseout▶ 마우스가 나갈때
+onMousedown▶ 마우스 누르는 순간
+onMousemove▶ 마우가 위치를 옮길때
+onDragDrop▶ 클릭한 상태에서 이동 했을 때
+onFocus▶ 커서가 위치할 때
+onBlur▶ 커서를 잃어버렸을 때
+onKeydown▶ 키보드 누를 때
+onKeypress▶ 키보드를 누르는 순간
+onKeyup▶ 키를 눌렀다가 떼는 순간
+onSubmit▶ 전송 버튼을 눌러 폼 문서를 제출할 때
+onReset▶ 입력 양식ㅇ르 초기화했을 때
+onSelect▶ 입력 상자의 문자열을 선택하거나 체크상자, 라디오 버튼을 선택할때
+onChange▶ 입력 양삭의 값이 바뀌었을 때
+onLoad▶ 문서를 읽었을 때
+onUnload▶ 문서를 닫을 때
+onMove▶ 브라우저를 이동했을 때
+onResize▶ 크기를 변경했을 때
+onAbort▶ 그림을 읽는 도중 중지했을 때
+onError▶ 문서나 그림을 읽는 도중 중지했을 때
+
+
+
+:::내장함수:::
+alert("mesage")▶ 확인버튼이 있는 메시지 창
+prompt("mesage","기본문구▶ 입력상자가 있는 메시지 창을 띄움
+confirm("mesage")▶ 확인 취소 버튼이 있는 창을 띄움
+eval()▶ 문자열을 수식으로 바꿈
+isNaN()▶ 전달받은 값이 숫자인지 문자인지 판별하여 숫자가 아닌 경우 true 값을 반환
+parseFloat()▶ 문자열을 부동소수점으로 바꿈
+parseInt()▶ 문자열을 정수로 바꿈
+escape()▶ ISO-Latin-1 문제 셋을 아스키 값으로 바꿈,  URL 표기형으로 변환
+unescape()▶ 위와 반대
+isFinite()▶ 전달받은 값이 유리수인지 판단하여 유리수인 경우 ture 값 반환
+Number()▶ 객체를 수치로 변환
+String()▶ 객체를 문자열로 변환
+
+
+
+:::Screen객체:::
+window.screen.availHeight▶ 작업 표시줄을 제외한 화면의 높이를 픽셀 값으로 표시
+window.screen.availWidth▶ 작업 표시줄을 제외한 화면의 너비를 픽셀 값으로 표시
+window.screen.availTop▶ 화면 표시 영역의 y 좌표 표시
+window.screen.availLeft▶ 화면 표시 영역의 x 좌표 표시
+window.screen.height▶ 화면의 높이를 픽셀 값으로 표시
+window.screen.width▶ 화면의 너비를 픽셀 값으로 표시
+colorDepth▶ 컴퓨터에서 사용하고 있는 컬러 수를 표시
+pixelDepth▶ 화면의 컬러 해상도를 표시(네비케이서용)
+
+
+
+
+:::Document객체:::
+document.bgcolor▶ 배경색
+document.fgcolor▶ 문서의 글자색, 선색
+document.linkcolor▶ 링크 색
+document.vlinkcolor▶ 방문한 링크 색
+document.alinkcolor▶ 선택 중인 링크 색
+document.lastModifed▶ 홈페이지가 마지막으로 갱신된 날짜 저장
+document.location▶ 웹 문서의 URL 저장
+document.URL▶ 뭔서의 URL 주소 값 반환
+document.domain▶ 서버의 도메인 명을 지정하거나 반환
+document.title▶ <title>태그 사이에 문서 제목을 제공
+document.cookie▶ 쿠키 파일의 정보를 읽고 쓸 수 있음
+document.image▶ 문서에 삽입된 그림을 배열로 제공
+document.links▶ 문서에 포함된 모든 링크의 이름을 배열로 제공
+document.forms▶ <from>태그 입력 순서대로 배열로 제공
+document.anchors▶ 문서에 포함된 하이퍼링크의 이름을 배열로 제공
+document.Applets▶ 문서에 포함된 배열들의 배열을 제공
+document.Embeds▶ 문서에 포함된 플러그인을 배열로 제공
+document.layers▶ 레이어의 배열 정고를 제공
+document.clear()▶ 문서의 모든 내용을 지움
+document.open()▶ 문서의 내용을 보여줌
+document.close()▶ open()으로 보여준 문서를 닫음
+document.write()▶ 태그를 포함하는 문자열을 출력
+document.writeIn()▶ <pre>태그와 함깨 사용하면 행 마지막에서 자동 개행
+*document 객체에서 사용되는 핸들러는
+ondbclick, onkeydown, onkeypress, onkeyup, onmousedown, onmouseup이다
+
+  
+
+
+:::Link객체:::
+document.links[인텍스번호].속성▶ 인덱스 번호번째 링크 속성
+document.links.length▶ 문서에 삽입된 링크 개수
+document.링크이름.속성▶ 링크의 네임이 링크이름인 링크의 속성
+---------link객체 속성------------
+length▶ 문서 내 링크 개수 알려줌
+href▶ URL 전체 주소 알려줌
+protocol▶ 프로토콜의 종류 알려줌
+host▶ 링크에 설정된 URL 주소, 호스트명, 포트번호 알려줌
+hostname▶ 도메인명이나 IP 주소를 알려줌
+pathname▶ URL에서 경로 부분의 정보를 알려줌
+port▶ :8080과 같은 포트번호를 알려줌
+search▶ ? 이후의 문자열을 알려줌
+hash▶ anchor 객체의 이름을 알려줌
+target▶ target 속성으로 지정한 문서가 열리는 프레임 이름을 알려줌
+text▶ 해당 링크를 가지고 있는 문자열을 알려줌
+x▶ 문서에서 해당 링크의 x좌표를 알려줌
+y▶ 문서에서 해당 링크의 y좌료를 알려줌
+
+
+
+
+:::Anchor객체:::
+document.anchors[인덱스 번호].속성▶ 인덱스 번호번째 책갈피 속성
+document.anchors.length▶ 문서에 삽입된 책갈피의 개수
+document.anchors[책갈피명]또는 document.all[책갈피명]▶ 책갈피명이 같은 책갈피 설정
+-------ancher객체 속성-------
+lenght▶ 문서에 삽입된 책갈피 개수를 알려줌
+name▶ 책갈피명을 알려줌
+text▶ 책갈피로 설정한 문자열을 알려줌
+x▶ 앵커 x좌표 값을 알려줌
+y▶ 앵커 y좌표 값을 알려줌
+
+
+
+:::Navigator객체:::
+navigator.appCodeNamea▶ 브라우저의 코드명을 알려줌
+navigator.appName▶ 브라우저의 종류를 알려줌
+navigator.appVersion▶ 브라우저의 버전을 알려줌
+navigator.userAgent▶ 브라우저의 코드명, 버전, 운영체제와 같은 브라우저의 정보를 알려줌
+navigator.platform▶ 시스템 코드를 알려줌
+navigator.javaEnable()▶ 브라우저에서 자바스키립트를 지원하는지 알려줌
+navigator.tainEnable()▶ 문서가 정상적으로 열렸는지 알려줌
+
+
+
+:::History객체:::
+window.histor.속성
+history.속성.메소드
+-------history 메소드-----
+back()▶ 뒤로
+forward()▶ 앞으로
+go(n)▶ n단계만큼 이동
+go(0)▶ 새로고침
+go(-1)▶ 이전 페이지로
+go(1)▶ 다음 페이지로
+
+
+
+:::Location객체
+windows.locatioin.속성
+location.속성=값
+location.메소드
+--------location속성-----------
+hash▶ #다음에 오는 문자열, 즉 앵커 이름을 표시
+host▶ 호스트명과 포트번호 표시
+hostname▶ 호스트명을 표시
+href▶ 완전한 형태의 URL 주소
+pathname▶ 문서의 경로 표시
+port▶ 프로토콜 종류 표시
+protocol▶ 프로토콜 종류 표시
+search▶ 검색 엔진을 실행할 때 나타나는 ? 이후의 문자 표시
+---------location메소드-------
+reload()▶ 문서를 다시 읽어옴(새로고침)
+
+
+
+
+:::String객체:::
+"환영합니다.".bold().fontcolor("red")
+----------string메소드-----------
+big()▶ 글자크기 크게
+small()▶ 글자크기 작게
+fontsize(값)▶ 글자크기 설정
+fontcolor("색상")▶ 색 지정
+bold()▶ 진하게
+fixed()▶ 글자크기 조정
+italic()▶ 기울임
+strike()▶ 취소선
+sup()▶ 위첨자
+sub()▶ 아래첨자
+
+
+
+:::문자열 처리:::
+"환영합니다.".indexOf("합")
+"환영합니다.".subsrt(2,4)
+---------문자열메소드-----------
+indexOf("문자")▶ 문자의 위치 값을 왼쪽부터 계산하여 숫자로 표시
+indexOf("문자",n)▶ 문자를 문자열의 n번째 문자부터 찾는다
+lastindexOf("문자")▶ 문자의 위치를 오른쪽부터 계산하여 숫자로 표시
+lastindexOf("문자",n)▶ 문자를 문자열 n번째 문자부터 찾는다
+charAt(n)▶ n번째 위치한 문자를 찾아준다.
+substring(n,m)▶ n번째 문자부터 m번째 문자까지 표시
+slice(n,m)▶ 위와 동일, 음수 값은 오른쪽부터 순번으로 계산
+substr(n,m)▶ n번째 문자부터 m개의 문자를 표시
+split("구분문자")▶ 구분문자를 이용해서 문자열 객체를 분리
+concat("문자열")▶ 문자열을 문자열 객체에 결합
+toUpperCase()▶ 모두 대문자로 표시
+toLowerCase()▶ 모두 소문자로 표시
+eval()▶ 문자열을 수치로 표시
+toString(n)▶ 수치를 n진수로 바꾸어 표시
+match()▶ 지정한 문자와 동일한 패턴을 찾는다. 없으면 널 값을 반환한다.
+search()▶ 문자열에서 지정한 문자 턴을 찾아 그 패턴의 오프셋 값을 반환
+replace()▶ 지정한 문자를 찾아 지정한 다른 문자열로 바꾼다.
+CharCodeAt(n)▶ n번째 문자를 ISO-Lation-1 코드 값으로 표시한다. 
