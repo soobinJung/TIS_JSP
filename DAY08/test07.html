@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> test04.html </title>
+ 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <script>
+     $(function(){
+        //$("*").css("border", "1px solid pink");
+        //$('#tit').css('background-color', '#ff0')
+        //.css('border', '3px dashed blue');
+
+       $('h1.tit').css('background-color', 'orange')
+       .css('border', '2px dashed blue');
+
+       $('h2').next().css('color','green');
+       $('h2').parent().css('border', '2px solid red')
+
+       $('#list_1').parent().css('border','3px dashed blue')
+
+       //test07.html적용
+       $('#wrap > h1').css('border','2px dashed red')
+       $('#wrap > section').children()
+       .css({ 
+          'background-color':'lightgreen' ,
+          'border':'2px solid red'
+        });
+     });
+ </script>
+</head>
+<body>
+   <h1>test07.html</h1>
+
+   <div id='wrap'>
+       <h1>인접관계 선택자</h1>
+       <p>내용1</p>
+       <section>
+           <h1>하위 요소 선택자</h1>
+           <p>내용2</p>
+       </section>
+   </div>
+ 
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test05.html</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+    $(function(){
+        var style_1 = { //보라색
+            'font-size':'20pt' ,
+            'background-color':"#A9ABD7" ,
+            'border':"5px solid #363A85"
+        }
+
+        var style_2 = { //분홍색
+            'font-size':'20pt' ,
+            'background-color':"#F0B4C7" ,
+            'border':"5px solid #E587A5"
+        }
+
+        var style_3 = { //주황색
+            'font-size':'20pt' ,
+            'background-color':"#FFEEDA" ,
+            'border':"5px solid #FFA43F"
+        }
+
+        var style_4 = { //초록색
+            'font-size':'20pt' ,
+            'background-color':"#BCD9BA" ,
+            'border':"5px solid #045900"
+        }
+
+        $('.txt1').closest("div").css(style_1);
+
+    });
+    </script>
+
+</head>
+<body>
+    <h1 class="title">선택자</h1>
+
+    <div>
+        <div>
+            <p class="txt1">내용</p>
+        </div>
+    </div>
+
+</body>
+</html>
