@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<!-- CDN jquery------------------------------------------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+
+     $(function() {
+        //obj는 배열명
+        var obj = [{
+            "area" : "서울"
+        },{
+            "area" : "부산"
+        },{
+            "area" : "전주"
+        }]
+
+        $(obj).each(function(i,o) {
+            console.log(i+":", o);
+        });
+
+        console.log("====The end 1====");
+
+        $.each($('#menu2 li'), function(i,o){
+            console.log(i+":",o);
+        });
+
+        console.log("====The end 2====");
+
+        $.each($('#menu2 li'), function(i){
+            console.log('숫자='+i+":",$(this));
+        });
+     });
+</script>
+
+<body>
+    <h1>each()/$.each() 메소드 199p</h1>
+    선택한 요소는 배열에 순서대로 저장된다. 이때 each()/$.each() 메소드는 <br>
+    배열에 저장된 요소를 순서대로 하나씩 선택하면서 인덱스 정보를 가져온다.
+    
+    <ul id='menu1'>
+        <li>내용1-1</li>
+        <li>내용1-2</li>
+        <li>내용1-3</li>
+    </ul>
+    <ul id='menu2'>
+        <li>내용2-1</li>
+        <li>내용2-2</li>
+        <li>내용2-3</li>
+    </ul>
+
+</body>
+</html>
